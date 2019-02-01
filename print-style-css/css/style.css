@@ -1,0 +1,15 @@
+@media print {
+	header,
+	footer {
+		display: none!important;
+	}
+
+	/* This line is important, it means that div's won't be split
+		across pages on print. This will make for a better experience.
+	 */
+	div{
+		page-break-inside: avoid;
+	}
+
+	/* Rest of your print only CSS goes here */
+}
